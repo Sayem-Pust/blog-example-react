@@ -25,12 +25,14 @@ export default function BlogList({ title, blog }) {
           })}
         </div>
       </section>
-      <Pagination
-        postsPerPage={postPerPage}
-        totalPosts={blog.length}
-        paginate={handlePaginate}
-        currentPage={currentPage}
-      />
+      {blog.length > 4 && (
+        <Pagination
+          postsPerPage={postPerPage}
+          totalPosts={blog.length}
+          paginate={handlePaginate}
+          currentPage={currentPage}
+        />
+      )}
     </div>
   );
 }
