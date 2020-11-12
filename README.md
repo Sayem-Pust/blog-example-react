@@ -1,8 +1,8 @@
-##This project has also been included redux
+## This project has also been included redux
 
-##For authentication, use JWT token
+## For authentication, use JWT token
 
-#Important note: you must use django server for authentication
+# Important note: you must use django server for authentication
 
  
 ## https://github.com/Sayem-Pust/example-blog
