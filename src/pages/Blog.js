@@ -7,13 +7,15 @@ import BlogList from '../components/Blog/BlogList'
 
 export default function Blog() {
   const dispatch = useDispatch();
-const onRequestPosts = () => dispatch(requestPosts());
-const state = useSelector((state) => state.requestPosts);
+  const onRequestPosts = () => dispatch(requestPosts());
+  const state = useSelector((state) => state.requestPosts);
+
+
   useEffect(() => {
     onRequestPosts();
-  }, [])
+  }, []);
 
-const { posts, isPending } = state;
+  const { posts, isPending } = state;
 
   if (isPending) {
     return <Loading />;
